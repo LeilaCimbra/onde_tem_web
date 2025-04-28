@@ -13,13 +13,14 @@
   <!--Sessão de navegadores-->
   <header>
     <div class="logo">
-      <img src="assets/image/icon_logo.svg" alt="Icone Logo" width="" height="">
-    <img src="assets/image/texto_logo.svg" alt="Texto logo">
+      <img src="assets/image/icon_logo.svg" alt="Icone da marca Onde Tem?" width="" height="">
+    <img src="assets/image/texto_logo.svg" alt="Texto Logo Onde Tem?">
     </div>
     <nav>
-      <a href="">Salões</a>
-      <a href="">Horários</a>
-      <button>Login</button>
+      <a href="#sobre">Sobre</a>
+      <a href="#saloes">Salões</a>
+      <a href="#horarios">Horários</a>
+      <button type="submit" alt="Login">Login</button>
     </nav>
   </header>
 
@@ -37,49 +38,52 @@
     <div class="hero-content">
       <h1>Beleza com hora marcada</h1>
       <h2>Transforme seu visual com um clique.</h2>
-      <p>Escolha seu serviço, agende online de forma <br> prática e no corforto do seu celular</p>
+      <p>Escolha seu serviço, agende online de forma <br> prática e no conforto do seu celular</p>
     </div>
     
     <!--Sessão de sugestões-->
     <div class="buttons">
-      <button>Agendar</button>
-      <button>Salões</button>
-      <button>Disponíveis</button>
-      <button>Horários</button>
+      <button type="submit" alt="Agendar">Agendar</button>
+      <button type="submit" alt="Salões">Salões</button>
+      <button type="submit" alt="Disponíveis">Disponíveis</button>
+      <button type="submit" alt="Horários">Horários</button>
     </div>
     <!--Sessão de pesquisa de serviço-->
-    <div class="search-bar">
-      <div class="group-options">
-        <label>Serviço</label>
-        <select>
-          <option value="corte">Corte de cabelo</option>
-          <option value="corte">Exemplo 1</option>
-          <option value="corte">Exemplo 2</option>
-          <option value="corte">Exemplo 3 </option>
-        </select>
-      </div>
-      <div class="group-options">
-        <label>Bairro</label>
-        <select>
-          <option value="endereco">Porto da Roça</option>
-          <option value="corte">Exemplo 1</option>
-          <option value="corte">Exemplo 2</option>
-          <option value="corte">Exemplo 3 </option>
-        </select>
-      </div>
-      <div class="group-options">
-        <label>Preço</label>
-        <select>
-          <option value="preco">R$150 - R$300</option>
-          <option value="corte">Exemplo 1</option>
-          <option value="corte">Exemplo 2</option>
-          <option value="corte">Exemplo 3 </option>
-        </select>
-      </div>
-      <div class="group-options">
-        <button><img src="assets/image/lupa.svg" alt="Lupa">Buscar</button>
-      </div>
-    </div>
+    <form class="search-bar">
+      <fieldset>
+        <legend>Escolha o Serviço</legend>
+        <div class="group-options">
+          <label>Serviço</label>
+          <select>
+            <option value="corte">Corte de cabelo</option>
+            <option value="exemplo 1">Exemplo 1</option>
+            <option value="exemplo 2">Exemplo 2</option>
+            <option value="exemplo 3">Exemplo 3 </option>
+          </select>
+        </div>
+        <div class="group-options">
+          <label>Bairro</label>
+          <select>
+            <option value="endereco">Porto da Roça</option>
+            <option value="exemplo 1">Exemplo 1</option>
+            <option value="exemplo 2">Exemplo 2</option>
+            <option value="exemplo 3">Exemplo 3 </option>
+          </select>
+        </div>
+        <div class="group-options">
+          <label>Preço</label>
+          <select>
+            <option value="preco">R$150 - R$300</option>
+            <option value="exemplo 1">Exemplo 1</option>
+            <option value="exemplo 2">Exemplo 2</option>
+            <option value="exemplo 3">Exemplo 3 </option>
+          </select>
+        </div>
+        <div class="group-options"></div>
+        <button type="submit" alt="Buscar"><img src="assets/image/lupa.svg" alt="Lupa">Buscar</button>
+        </div>
+      </fieldset>
+    </form>
   </section>
 </body>
 </html>

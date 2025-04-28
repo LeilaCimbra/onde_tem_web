@@ -3,124 +3,149 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  font-size: 62.5%; /* aqui mudei o tamanho da fonte, a cada 10 px = 1rem pra melhorar a responsividade*/
+  --font-family:'Poppins', sans-serif;
+  --font-weigth-fino:275;
+  --font-weigth-normal:400;
+  --font-weigth-medio:500;
+  --font-weigth-bold:700;
+  --color-primary:#472969;
+  --color-secundary:#B78BBC;
+  --color-terciary: #fff;
+  --background-grey:#D9D9D9;
+  --background-purple:var(--color-primary);
+  --background-pink:var(--color-secundary);
+}
 body {
-  font-family: 'Poppins', sans-serif;
-  margin: 5px 75px ;
+  font-family: var(--font-family);
+  margin: 0.5rem 7.5rem ;
   letter-spacing: -4%;
 }
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
 }
 .logo {
   display: flex;
   gap: 8px;
 }
 nav {
-  width: 500px;
+  width: 60rem;
   display: flex;
   justify-content:flex-end;
   align-items: center;
 }
 nav a {
-  font-weight: 275;
-  font-size: 34.52px;
-  line-height: 23.43px;
+  font-weight: var(--font-weigth-fino);
+  font-size: 3.452rem;
+  line-height: 2.343rem;
   text-decoration: none;
-  padding-right: 38px;
-  color:#472969;
+  padding-right: 3.8rem;
+  color:var(--color-primary);
 }
 nav a:hover {
-  color:#B78BBC;
+  color:var(--color-secundary);
 }
 button {
-  font-family:'Poppins', sans-serif ;
+  font-family:var(--font-family) ;
 }
 header button {
-  width: 114px;
-  height: 63px;
-  font-weight: 275;
-  font-size: 34.52px;
-  line-height: 23.43px;
-  color: white;
+  width: 11.4rem;
+  height: 6.3rem;
+  font-weight: var(--font-weigth-fino);
+  font-size: 3.452rem;
+  line-height: 2.343rem;
+  color: var(--color-terciary);
   cursor: pointer;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   border: none;
   background: linear-gradient(90deg, #B78BBC 0%, #DDC4E0 100%);
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25); 
+  box-shadow: 0rem 0.8rem 1.6rem rgba(0, 0, 0, 0.25); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 header button:hover {
-  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0rem 1.2rem 2.4rem rgba(0, 0, 0, 0.3); 
   transform: scale(1.05);
 }
 section {
-  height: 592px;
+  height: 59.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   background: linear-gradient(rgba(70, 40, 104, 0.9), rgba(70, 40, 104, 0.9)), url('assets/image/imagem.png') no-repeat center top 30%;
   background-size: cover;
 }
 .hero-content {
-  color: white;
+  color: var(--color-terciary);
   text-align: center;
-  margin-top: 74px;
+  margin-top: 7.4rem;
 }
 .hero-content h1 {
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 56px;
+  font-weight: var(--font-weigth-bold);
+  font-size: 6.4rem;
+  line-height: 5.6rem;
 
 }
 .hero-content h2 {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 56px;
+  font-weight: var(--font-weigth-bold);
+  font-size: 4.8rem;
+  line-height: 5.6rem;
 }
 .hero-content p {
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 33px;
-  margin-top: 43px;
+  font-weight: var(--font-weigth-normal);
+  font-size: 3.2rem;
+  line-height: 3.3rem;
+  margin-top: 4.3rem;
 }
 .buttons {
   display: flex;
   justify-content: space-around;
-  width: 893px;
-  margin-top: 91px;
+  width: 89.3rem;
+  margin-top: 9.1rem;
 }
 .buttons button {
-  width: 180px;
-  height: 63px;
-  border-radius: 100px;
+  width: 18.0rem;
+  height: 6.3rem;
+  border-radius: 10.0rem;
   border: none;
-  background-color: #D9D9D9;
-  font-weight: 275;
-  font-size: 24px;
-  line-height: 33px;
+  background-color: var(--background-grey);
+  font-weight: var(--font-weigth-fino);
+  font-size: 2.4rem;
+  line-height: 3.3rem;
   text-align: center;
   vertical-align: middle;
-  color:#472969;
-  padding: 10px;
+  color:var(--color-primary);
+  padding: 1.0rem;
   cursor: pointer;
 }
 .buttons button:hover {
-  background-color: #472969;
-  color: white;
+  background-color: var(--background-purple);
+  color: var(--color-terciary);
 }
 .search-bar{
   display: flex;
   justify-content: space-around;
-  margin: 8px 8px;
-  padding: 16px 0;
-  background-color: #D9D9D9;
-  width: 972px;
-  height: 120px;
-  border-radius: 25px;
+  margin: 0.8rem 0.8rem;
+  padding: 1.6rem 0;
+  background-color: var(--background-grey);
+  width: 97.2rem;
+  height: 12.0rem;
+  border-radius: 2.5rem;
+}
+fieldset {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+legend {
+  display: none;
 }
 .group-options {
   display: flex;
@@ -128,48 +153,48 @@ section {
   align-items: flex-start;
 }
 .group-options label {
-  font-weight: 275;
-  font-size: 17.32px;
-  line-height: 23.81px;
+  font-weight: var(--font-weigth-fino);
+  font-size: 1.732rem;
+  line-height: 2.381rem;
   text-align: center;
   color: #05050566;
 }
 .group-options select {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 33px;
+  font-weight: var(--font-weigth-medio);
+  font-size: 2.4rem;
+  line-height: 3.3rem;
   text-align: center;
   background-color: transparent;
   border: none;
   appearance:none;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z" fill="%23333"/></svg>'); 
   background-repeat: no-repeat;
-  background-position: right 10px center;
-  padding-right: 40px;
+  background-position: right 1.0rem center;
+  padding-right: 4.0rem;
 }
-.group-options button {
-  width: 141;
-  height: 89;
-  border-radius: 25px;
-  font-family: Poppins;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 33px;
+fieldset button[type="submit"] {
+  width: 14.1;
+  height: 8.9;
+  border-radius: 2.5rem;
+  font-family: var(--font-family);
+  font-weight: var(--font-weigth-medio);
+  font-size: 2.4rem;
+  line-height: 3.3rem;
   letter-spacing: -4%;
   text-align: center;
-  background-color: #472969;
-  padding: 20px;
+  background-color: var(--background-purple);
+  padding: 2.0rem;
   border: none;
-  box-shadow: 0px 8px 16px rgba(70, 40, 104, 0.9); 
+  box-shadow: 0rem 8rem 16rem rgba(70, 40, 104, 0.9); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  color:white;
+  color:var(--color-terciary);
 }
-.group-options button:hover {
-  background-color: #B78BBC;
-  color: #472969;
+fieldset button[type="submit"]:hover {
+  background-color: var(--background-pink);
+  color:var(--color-primary);
   transform: scale(1.05);
 }
 .group-options button img{
-  margin-right: 8px;
+  margin-right: 0.8rem;
 }
