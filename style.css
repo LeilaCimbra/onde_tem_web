@@ -6,10 +6,11 @@
 :root {
   font-size: 62.5%; /* aqui mudei o tamanho da fonte, a cada 10 px = 1rem pra melhorar a responsividade*/
   --font-family:'Poppins', sans-serif;
-  --font-weigth-fino:275;
-  --font-weigth-normal:400;
-  --font-weigth-medio:500;
-  --font-weigth-bold:700;
+  --font-weight-fino:275;
+  --font-weight-normal:400;
+  --font-weight-medio:500;
+  --font-weight-bold:700;
+  --font-weight-extra-bold:800;
   --color-primary:#472969;
   --color-secundary:#B78BBC;
   --color-terciary: #fff;
@@ -19,14 +20,13 @@
 }
 body {
   font-family: var(--font-family);
-  margin: 0.5rem 7.5rem ;
-  letter-spacing: -4%;
+  letter-spacing: -0.04rem;
 }
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 3.2rem;
+  margin: 3.2rem 7.5rem;
 }
 .logo {
   display: flex;
@@ -39,7 +39,7 @@ nav {
   align-items: center;
 }
 nav a {
-  font-weight: var(--font-weigth-fino);
+  font-weight: var(--font-weight-fino);
   font-size: 3.452rem;
   line-height: 2.343rem;
   text-decoration: none;
@@ -55,7 +55,7 @@ button {
 header button {
   width: 11.4rem;
   height: 6.3rem;
-  font-weight: var(--font-weigth-fino);
+  font-weight: var(--font-weight-fino);
   font-size: 3.452rem;
   line-height: 2.343rem;
   color: var(--color-terciary);
@@ -70,7 +70,8 @@ header button:hover {
   box-shadow: 0rem 1.2rem 2.4rem rgba(0, 0, 0, 0.3); 
   transform: scale(1.05);
 }
-section {
+.hero{
+  margin: 0 7.5rem;
   height: 59.2rem;
   display: flex;
   flex-direction: column;
@@ -85,35 +86,35 @@ section {
   margin-top: 7.4rem;
 }
 .hero-content h1 {
-  font-weight: var(--font-weigth-bold);
+  font-weight: var(--font-weight-bold);
   font-size: 6.4rem;
-  line-height: 5.6rem;
+  line-height: 6.8rem;
 
 }
 .hero-content h2 {
-  font-weight: var(--font-weigth-bold);
+  font-weight: var(--font-weight-bold);
   font-size: 4.8rem;
   line-height: 5.6rem;
 }
 .hero-content p {
-  font-weight: var(--font-weigth-normal);
+  font-weight: var(--font-weight-normal);
   font-size: 3.2rem;
   line-height: 3.3rem;
   margin-top: 4.3rem;
 }
-.buttons {
+.hero-buttons {
   display: flex;
   justify-content: space-around;
   width: 89.3rem;
-  margin-top: 9.1rem;
+  margin-top: 8rem;
 }
-.buttons button {
+.hero-buttons button {
   width: 18.0rem;
   height: 6.3rem;
   border-radius: 10.0rem;
   border: none;
   background-color: var(--background-grey);
-  font-weight: var(--font-weigth-fino);
+  font-weight: var(--font-weight-fino);
   font-size: 2.4rem;
   line-height: 3.3rem;
   text-align: center;
@@ -122,7 +123,7 @@ section {
   padding: 1.0rem;
   cursor: pointer;
 }
-.buttons button:hover {
+.hero-buttons button:hover {
   background-color: var(--background-purple);
   color: var(--color-terciary);
 }
@@ -147,20 +148,24 @@ fieldset {
 legend {
   display: none;
 }
-.group-options {
+.search-bar {
+  max-width: 97.2rem;
+  width: 100%;
+}
+.search-bar-options {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.group-options label {
-  font-weight: var(--font-weigth-fino);
+.search-bar-options label {
+  font-weight: var(--font-weight-fino);
   font-size: 1.732rem;
   line-height: 2.381rem;
   text-align: center;
   color: #05050566;
 }
-.group-options select {
-  font-weight: var(--font-weigth-medio);
+.search-bar-options select {
+  font-weight: var(--font-weight-medio);
   font-size: 2.4rem;
   line-height: 3.3rem;
   text-align: center;
@@ -171,13 +176,17 @@ legend {
   background-repeat: no-repeat;
   background-position: right 1.0rem center;
   padding-right: 4.0rem;
+  cursor: pointer;
 }
 fieldset button[type="submit"] {
-  width: 14.1;
-  height: 8.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14.1rem;
+  height: 8.9rem;
   border-radius: 2.5rem;
   font-family: var(--font-family);
-  font-weight: var(--font-weigth-medio);
+  font-weight: var(--font-weight-medio);
   font-size: 2.4rem;
   line-height: 3.3rem;
   letter-spacing: -4%;
@@ -191,10 +200,106 @@ fieldset button[type="submit"] {
   color:var(--color-terciary);
 }
 fieldset button[type="submit"]:hover {
-  background-color: var(--background-pink);
-  color:var(--color-primary);
+  background-color: #623a90;
   transform: scale(1.05);
 }
-.group-options button img{
+.search-bar-options button img{
   margin-right: 0.8rem;
+}
+
+.about {
+  display: flex;
+  margin: 10rem 7.5rem;
+}
+.about-column-text h1 {
+  font-weight: var(--font-weight-bold);
+  font-size: 6.893rem;
+  line-height: 5.882rem;
+  letter-spacing: -5%;
+  padding-bottom: 1.5rem;
+}
+.gradient-text {
+  background: linear-gradient(90deg, #472969 0%, #B78BBC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-column-text p {
+  font-weight: var(--font-weight-normal);
+  font-size: 37.19px;
+  line-height: 30.68px;
+  letter-spacing: -4%;
+  margin-top: 7.138rem;
+  color: var(--color-primary);
+}
+.about-column-text button {
+  width: 30.8rem;
+  height: 11.7rem;
+  border-radius: 8.37rem;
+  border: none;
+  background: linear-gradient(180deg, #8C51CF 25.96%, #472969 100%);
+  color: var(--color-terciary);
+  margin-top: 19rem;
+  font-weight: var(--font-weight-normal);
+  font-size: 3.348rem;
+  cursor: pointer;
+  box-shadow: 0rem 0.8rem 1.6rem rgba(0, 0, 0, 0.25); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-column-text button:hover {
+  box-shadow: 0rem 1.2rem 2.4rem rgba(0, 0, 0, 0.3); 
+  transform: scale(1.05);
+}
+.services {
+  background: linear-gradient(180deg, #8B4FCE 0%, #462868 100%);
+
+}
+.services-discount h1 {
+  padding-top: 4.314rem;
+  color: var(--color-terciary);
+  font-weight: var(--font-weight-medio);
+  font-size: 6.8rem;
+  line-height: 7.5rem;
+  letter-spacing: -0.05em;
+  text-align: center;
+}
+.services-discount h1 span {
+  font-weight: var(--font-weight-extra-bold);
+  color:#d737da
+}
+.services-cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  max-width: 101.1rem;
+  height: auto;
+  gap: 2rem;
+  margin: 0 auto ;
+  padding: 4rem;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+  
+}
+.teste {
+  height: 500px;
+}
+.teste h1 {
+  font-size: 64px;
+}
+.teste p {
+  font-size: 48px;
 }
