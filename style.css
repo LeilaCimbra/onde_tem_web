@@ -7,8 +7,10 @@
   font-size: 62.5%; /* aqui mudei o tamanho da fonte, a cada 10 px = 1rem pra melhorar a responsividade*/
   --font-family:'Poppins', sans-serif;
   --font-weight-fino:275;
+  --font-weight-light:300;
   --font-weight-normal:400;
   --font-weight-medio:500;
+  --font-weight-semi-bold:600;
   --font-weight-bold:700;
   --font-weight-extra-bold:800;
   --color-primary:#472969;
@@ -33,7 +35,6 @@ header {
   gap: 8px;
 }
 nav {
-  width: 60rem;
   display: flex;
   justify-content:flex-end;
   align-items: center;
@@ -230,7 +231,7 @@ fieldset button[type="submit"]:hover {
   line-height: 30.68px;
   letter-spacing: -4%;
   margin-top: 7.138rem;
-  color: var(--color-primary);
+  
 }
 .about-column-text button {
   width: 30.8rem;
@@ -302,4 +303,78 @@ fieldset button[type="submit"]:hover {
 }
 .teste p {
   font-size: 48px;
+}
+.advantages {
+  color:var(--color-primary)
+}
+.advantages-text h1 {
+  margin-top: 8.3rem;
+  font-weight: var(--font-weight-medio);
+  font-size: 6.8rem;
+  letter-spacing: -0.05em;
+  line-height: 7.0rem;
+  
+  text-align: center;
+}
+.advantages-text h1 span {
+  font-weight: var(--font-weight-bold);
+}
+.advantages-text p{
+  margin-top: 3.5rem;
+  font-family: Poppins;
+  font-weight: var(--font-weight-normal);
+  font-size: 3.8rem;
+  line-height: 3.068rem;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+.advantages_container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4.7rem;
+}
+.advantages_container_partner_benefits h2 {
+  font-weight: var(--font-weight-bold);
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.05em;
+  
+}
+.advantages_container_items {
+  margin-top: 4.7rem;
+  list-style: none;
+  align-items: center;
+}
+.advantages_container_items strong {
+  padding-left: 1.6rem;
+  font-weight: var(--font-weight-semi-bold);
+  font-size: 3.8rem;
+  line-height: 3.068rem;
+  letter-spacing: -0.04em;
+  text-align: center;
+  
+}
+.advantages_container_items p {
+  padding-left: 1.6rem;
+  font-weight: var(--font-weight-light);
+  font-size: 2.0rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.04em;
+  
+}
+.item {
+  position: relative;
+  padding-left: 4.0rem;
+  margin-bottom: 4.0rem;
+}
+.item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2.0rem;
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+  background-size: cover;
+  background: linear-gradient(122.28deg, #B772FF 14.85%, #F087B8 86.72%);
 }
