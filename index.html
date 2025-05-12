@@ -16,12 +16,12 @@
       <img src="assets/image/icon_logo.svg" alt="Icone da marca Onde Tem?">
       <img src="assets/image/texto_logo.svg" alt="Texto Logo Onde Tem?">
     </div>
-    <nav>
+    <nav class="header_nav">
       <a href="#sobre">Sobre</a>
       <a href="#funcionalidades">Funcionalidades</a>
       <a href="#vire_membro">Vire Membro</a>
       <a href="#planos">Planos</a>
-      <button type="submit">Login</button>
+      <button type="button">Login</button>
     </nav>
   </header>
 
@@ -44,10 +44,10 @@
     
     <!--Seção de sugestões-->
     <div class="hero-buttons"> <!--Aqui os botões vão direcionar a setores específicos que vamos definir ainda-->
-      <button type="submit" alt="Agendar">Agendar</button>
-      <button type="submit" alt="Salões">Salões</button>
-      <button type="submit" alt="Disponíveis">Disponíveis</button>
-      <button type="submit" alt="Horários">Horários</button>
+      <button type="button" alt="Agendar">Agendar</button>
+      <button type="button" alt="Salões">Salões</button>
+      <button type="button" alt="Disponíveis">Disponíveis</button>
+      <button type="button" alt="Horários">Horários</button>
     </div>
     <!--Seção de pesquisa de serviço-->
     <form class="search-bar">
@@ -81,7 +81,7 @@
           </select>
         </div>
         <div class="search-bar-options"></div>
-        <button type="submit" alt="Buscar"><img src="assets/image/lupa.svg" alt="Lupa">Buscar</button>
+        <button type="button" alt="Buscar"><img src="assets/image/lupa.svg" alt="Lupa">Buscar</button>
         </div>
       </fieldset>
     </form>
@@ -89,6 +89,7 @@
 
   <!--Seção principal-->
   <main>
+    <!--Seção Sobre-->
     <section id="sobre" class="about">
       <div class="about-column-text">
         <h1 class="gradient-text">Conectamos você aos melhores serviços de <br> beleza da sua região.</h1>
@@ -99,7 +100,7 @@
         <img src="assets/image/main_image.svg" alt="Mulher olhando para o celular">
       </div>
     </section>
-    
+    <!--Seção de Serviços-->
     <section id="funcionalidades" class="services">
       <div class="services-discount">
         <h1>Baixe agora e aproveite <span>15 dias grátis</span> <br>para agendar seus serviços favoritos!</h1>
@@ -126,6 +127,7 @@
       </div>
     </section>
 
+    <!--Seção de Vantagens-->
     <section id="vire_membro" class="advantages">
       <div class="advantages-text">
         <h1>Seja um profissional <br> parceiro do <span>Onde Tem?</span></h1>
@@ -159,6 +161,138 @@
       </div>
     </section>
 
+    <section id="planos" class="plans">
+      <div>
+        <h1>CONHEÇA <br>
+        NOSSOS PLANOS</h1>
+      </div>
+      <div class="plans_cards_wrapper">
+        <button class="cards_arrow_left"></button>
+        <div class="plans_cards_actions">
+          <div class="plans_cards">
+            <h3>PLANO ANUAL</h3>
+              <ul>
+                <li>Iniciando com 1 profissional</li>
+                <li>Perfil profissional no app</li>
+                <li>Agendamento online ilimitado</li>
+                <li>Avaliações de clientes</li>
+                <li>Suporte por e-mail</li>
+              </ul>
+            <div class="price_box">
+              <span class="from">A partir de</span>
+              <div class="price">
+                <span class="real">R$</span>
+                <span class="big">48</span>
+                <span class="small">,90</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="plans_cards_actions">
+          <div class="plans_cards">
+            <h3>PLANO SEMESTRAL</h3>
+            <ul>
+              <li>Iniciando com um profissional</li>
+              <li>Destaque nas buscas locais</li>
+              <li>Link personalizado do perfil</li>
+              <li>Relatórios de desempenho</li>
+              <li>Suporte via chat</li>
+            </ul>
+            <div class="price_box">
+              <span class="from">A partir de</span>
+              <div class="price">
+                <span class="real">R$</span>
+                <span class="big">59</span>
+                <span class="small">,90</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="plans_cards_actions">
+          <div class="plans_cards">
+            <h3>PLANO MENSAL</h3>
+            <ul>
+              <li>Tudo dos outros planos</li>
+              <li>Cadastro de múltiplos profissionais</li>
+              <li>Gestão de equipe e horários</li>
+              <li>Suporte premium</li>
+            </ul>
+            <div class="price_box">
+              <span class="from">A partir de</span>
+              <div class="price">
+                <span class="real">R$</span>
+                <span class="big">69</span>
+                <span class="small">,90</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="cards_arrow_right"></button>
+      </div>
+      <div class="download">
+        <button class="download_button">
+          <div class="button_inner">Baixe <strong>agora</strong><img src="assets/image/seta_dowload.svg" alt=""></div>
+        </button>
+        <div class="icons">
+          <img src="assets/image/android.svg" alt="ios">
+          <img src="assets/image/ios.svg" alt="android">
+        </div>
+      </div>
+    </section>
   </main>
+  <footer>
+    <div class="options">
+      <img src="assets/image/footer_logo.svg" alt="">
+      <nav class="options_nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#vire_membro">Vire Membro</a>
+      <a href="#planos">Planos</a>
+      <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+    <div class="social_network">
+      <div class="social_network_icons">
+        <div> 
+          <img src="assets/image/instagram.svg" alt="instagram">
+          <img src="assets/image/youtube.svg" alt="youtube">
+          <img src="assets/image/x.svg" alt="x">
+        </div>
+        <p>Siga agora mesmo</p>
+      </div>
+      <div class="social_network_text">
+        <h3>Descubra onde tem beleza perto de você </h3>
+        <p>Praticidade, confiança e segurança. Baixe o app e comece agora!</p>
+      </div>
+    </div>
+    <div class="social_network_links">
+      <nav>
+        <a href="politicas_de_privaidade">Políticas de Privacidade |</a>
+        <a href="termos_de_uso"> Termos de uso</a>
+      </nav>
+      <p>© 2025 Onde Tem? Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <!-- Modal (começa escondido) -->
+  <div id="loginModal" class="modal_hidden">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <label for="login">Login</label>
+      <input type="text" id="login" placeholder="Digite aqui seu login" />
+
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" placeholder="Confirme sua senha" />
+
+      <a href="#" class="forgot-password">Esqueceu sua senha</a>
+
+      <button class="login-submit">LOGIN</button>
+
+      <div class="divider"><span>ou</span></div>
+
+      <p class="signup-text">Crie sua conta</p>
+      <button class="google-login">Entrar com o Google</button>
+    </div>
+  </div>
 </body>
+<script src="index.js"></script>
 </html>
