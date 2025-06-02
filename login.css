@@ -2,8 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font-family);
-  letter-spacing: -0.04rem;
 }
 :root {
   font-size: 62.5%; /* aqui mudei o tamanho da fonte, a cada 10 px = 1rem pra melhorar a responsividade*/
@@ -22,8 +20,10 @@
   --background-purple:var(--color-primary);
   --background-pink:var(--color-secundary);
 }
-
-/* HEADER*/
+body {
+  font-family: var(--font-family);
+  letter-spacing: -0.04rem;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -71,9 +71,6 @@ header button:hover {
   box-shadow: 0rem 1.2rem 2.4rem rgba(0, 0, 0, 0.3); 
   transform: scale(1.05);
 }
-
-/* HERO*/
-
 .hero{
   margin: 0 7.5rem;
   height: 59.2rem;
@@ -132,8 +129,6 @@ header button:hover {
   background-color: var(--background-purple);
   color: var(--color-terciary);
 }
-
-/* SEARCH */
 .search-bar{
   display: flex;
   justify-content: space-around;
@@ -196,6 +191,7 @@ fieldset button[type="button"] {
   font-weight: var(--font-weight-medio);
   font-size: 2.4rem;
   line-height: 3.3rem;
+  letter-spacing: -4%;
   text-align: center;
   background-color: var(--background-purple);
   padding: 2.0rem;
@@ -213,7 +209,6 @@ fieldset button[type="button"]:hover {
   margin-right: 0.8rem;
 }
 
-/* ABOUT */
 .about {
   display: flex;
   margin: 10rem 7.5rem;
@@ -222,7 +217,7 @@ fieldset button[type="button"]:hover {
   font-weight: var(--font-weight-bold);
   font-size: 6.893rem;
   line-height: 5.882rem;
-  letter-spacing: -0.05em;
+  letter-spacing: -5%;
   padding-bottom: 1.5rem;
 }
 .gradient-text {
@@ -235,6 +230,7 @@ fieldset button[type="button"]:hover {
   font-weight: var(--font-weight-normal);
   font-size: 37.19px;
   line-height: 30.68px;
+  letter-spacing: -4%;
   margin-top: 7.138rem;
   
 }
@@ -256,8 +252,6 @@ fieldset button[type="button"]:hover {
   box-shadow: 0rem 1.2rem 2.4rem rgba(0, 0, 0, 0.3); 
   transform: scale(1.05);
 }
-
-/* SERVICES*/
 .services {
   background: linear-gradient(180deg, #8B4FCE 0%, #462868 100%);
 
@@ -301,8 +295,6 @@ fieldset button[type="button"]:hover {
   max-width: 100%;
   height: auto;
 }
-
-/* ADVANTAGES */
 .advantages {
   color:var(--color-primary)
 }
@@ -324,6 +316,7 @@ fieldset button[type="button"]:hover {
   font-weight: var(--font-weight-normal);
   font-size: 3.8rem;
   line-height: 3.068rem;
+  letter-spacing: -0.04em;
   text-align: center;
 }
 .advantages_container {
@@ -348,6 +341,7 @@ fieldset button[type="button"]:hover {
   font-weight: var(--font-weight-semi-bold);
   font-size: 3.8rem;
   line-height: 3.068rem;
+  letter-spacing: -0.04em;
   text-align: center;
   
 }
@@ -356,6 +350,7 @@ fieldset button[type="button"]:hover {
   font-weight: var(--font-weight-light);
   font-size: 2.0rem;
   line-height: 2.8rem;
+  letter-spacing: -0.04em;
   
 }
 .item {
@@ -374,9 +369,6 @@ fieldset button[type="button"]:hover {
   background-size: cover;
   background: linear-gradient(122.28deg, #B772FF 14.85%, #F087B8 86.72%);
 }
-
-/* PLANS*/
-
 .plans {
   height: 101.1rem;
   background-image: url(assets/image/background_planos.png) ;
@@ -457,6 +449,7 @@ fieldset button[type="button"]:hover {
   font-weight: var(--font-weight-extra-bold);
   font-size: 2.281rem;
   line-height: 3.217rem;
+  letter-spacing: -0.04em;
 }
 .plans_cards ul{
   display: flex;
@@ -467,6 +460,7 @@ fieldset button[type="button"]:hover {
   font-weight: var(--font-weight-light);
   font-size: 1.342rem;
   line-height: 1.677rem;
+  letter-spacing: -0.04em;
 }
 .price_box {
   display: flex;
@@ -484,6 +478,7 @@ fieldset button[type="button"]:hover {
   font-weight: var(--font-weight-medio);
   font-size: 1.61rem;
   line-height: 3.217rem;
+  letter-spacing: -0.04em;
   margin-top: 3.2rem;
   margin-bottom: 2.4rem;
   z-index: 2;
@@ -492,6 +487,7 @@ fieldset button[type="button"]:hover {
   font-weight: var(--font-weight-medio);
   font-size: 2.147rem;
   line-height: 4.584rem;
+  letter-spacing: -0.04em;
 }
 .big {
   font-weight: var(--font-weight-bold);
@@ -539,6 +535,7 @@ fieldset button[type="button"]:hover {
   font-weight: var(--font-weight-medio);
   font-size: 3.085rem;
   line-height: 4.35rem;
+  letter-spacing: -0.04em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -551,9 +548,6 @@ fieldset button[type="button"]:hover {
   display: flex;
   gap: 1.6rem;
 }
-
-/* FOOTER */
-
 footer {
   background: linear-gradient(358.65deg, #B9B9B9 1.26%, #FFFEFE 96.36%);
 
@@ -577,6 +571,7 @@ footer {
   font-weight: var(--font-weight-semi-bold);
   font-size: 2.8rem;
   line-height: 5.105rem;
+  letter-spacing: -0.04em;
   color: var(--color-primary);
   cursor: pointer;
 }
@@ -595,6 +590,7 @@ footer {
   font-weight: var(--font-weight-medio);
   font-size: 2.0rem;
   line-height: 5.105rem;
+  letter-spacing: -0.04em;
   color: var(--color-primary);
 }
 .social_network_text {
@@ -604,12 +600,14 @@ footer {
   font-weight: var(--font-weight-semi-bold);
   font-size: 2.8rem;
   line-height: 3rem;
+  letter-spacing: -0.04em;
   color: var(--color-primary);
 }
 .social_network_text p {
   font-weight: var(--font-weight-light);
   font-size: 1.5rem;
   line-height: 1.7rem;
+  letter-spacing: -0.04em;
   color: var(--color-primary);
 }
 .social_network_links {
@@ -621,7 +619,6 @@ footer {
   font-weight: var(--font-weight-light);
   font-size: 1.5rem;
   line-height: 1.7rem;
+  letter-spacing: -0.04em;
   color: var(--color-primary);
 }
-
-
